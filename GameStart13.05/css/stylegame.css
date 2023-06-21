@@ -1,0 +1,228 @@
+* {  
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+}
+header{
+    background-color: #002fff;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(153, 0, 255);   
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    margin-right: 3rem;
+}
+nav > a{
+    color: rgb(225, 0, 233);
+    text-decoration: none;
+    margin-left: 0.9rem;    
+    justify-content: space-evenly;
+}
+nav > a:hover{
+    color: rgb(0, 230, 88);
+    font-size: 1.6rem;
+    margin: 0.9rem;
+}
+img {
+    width: 5px;
+    }    
+figure{
+    width: 2rem;
+    margin-right: 1rem;
+}
+figure > img{
+    width: 5rem;
+    height: 5rem;
+}
+footer{
+    background-color: #ff00c8;
+    color: rgb(0, 255, 234);
+    text-align: center;
+    height: 50px;
+}
+ body{
+    background-color: #000000;
+ }
+img{
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    margin: 0.5rem;
+    text-align: center;
+}
+main{
+    display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  .btn::after {
+    content: 'like';
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: .2s linear;
+  }
+  .icon path {
+    fill: white;
+    transition: .2s linear;
+  }
+  .btn:hover > .icon {
+    transform: scale(1.2);
+  }
+  .btn:hover > .icon path {
+    fill: rgb(177, 139, 189);
+  }
+  .btn:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+  .group {
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 5px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
+   .con-like {
+    --red: rgb(255, 50, 100);
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .con-like .like {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .con-like .checkmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .con-like .outline,
+  .con-like .filled {
+    fill: var(--red);
+    position: absolute;
+  }
+  
+  .con-like .filled {
+    animation: kfr-filled 0.5s;
+    display: none;
+  }
+  
+  .con-like .celebrate {
+    position: absolute;
+    animation: kfr-celebrate 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  
+  .con-like .poly {
+    stroke: var(--red);
+    fill: var(--red);
+  }
+  
+  .con-like .like:checked ~ .checkmark .filled {
+    display: block
+  }
+  
+  .con-like .like:checked ~ .checkmark .celebrate {
+    display: block
+  }
+  
+  @keyframes kfr-filled {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes kfr-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 0.8;
+    }
+  
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+      display: none;
+    }
+  }

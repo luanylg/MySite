@@ -1,0 +1,308 @@
+*{  
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+}
+header{
+    background-color: #0400ff;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(132, 0, 255);
+    align-items: center;   
+}
+nav > a{
+    color: rgb(255, 0, 234);
+    text-decoration: none;
+    margin: 0.9rem; 
+    justify-content: space-evenly;
+}
+nav > a:hover{
+    color: rgba(251, 255, 0, 0.773);
+    font-size: 1.6rem;
+    margin: 0.9rem;
+}
+
+figure > img{
+    width: 5rem;
+    height: 5rem;
+    text-decoration: none;
+}
+footer{
+    background-color: #ff00d4;
+    color: rgba(0, 255, 55, 0.773);
+    text-align: center;
+    height: 50px;
+}
+ body{
+    background-color: #000000;
+ }
+img{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    margin: 1rem; 
+}
+
+.vava{
+
+    width: 20rem;
+    height: 20rem;
+}
+main{
+    display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+div{
+    justify-content: space-between;
+}
+article{
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    color: #32ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    color: #ff0ef7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+title{
+    font-size: 3rem;
+}
+
+
+.button {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: .2s;
+  }
+  
+  .game path {
+    color: white;
+  }
+  .oii{
+    height: 30rem;
+    width:  15rem;
+    margin-left: 37rem;
+  }
+  .ff{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 34%;
+  }
+  .free{
+    width: 50rem;
+    height: 25rem;
+  }
+  .lol{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 36%;
+  }
+  .yag{
+    width: 50rem;
+    height: 25rem;
+  }
+  .fort{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 34%;
+  }
+  .nite{
+    width: 50rem;
+    height: 25rem;
+  }
+  
+  .button .arrow {
+    position: absolute;
+    right: 0;
+    padding: 0px 5px;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: black;
+    transition-duration: .2s;
+  }
+  
+  .button:hover .arrow {
+    animation: slide-right .6s ease-out both;
+  }
+  /* arrow animation */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: translate(1px , 1px);
+    transition-duration: .2s;
+  }
+
+  button, button:focus {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+  
+  button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+  }
+
+  .con-like {
+  --red: rgb(255, 50, 100);
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.con-like .like {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.con-like .checkmark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-like .outline,
+.con-like .filled {
+  fill: var(--red);
+  position: absolute;
+}
+
+.con-like .filled {
+  animation: kfr-filled 0.5s;
+  display: none;
+}
+
+.con-like .celebrate {
+  position: absolute;
+  animation: kfr-celebrate 0.5s;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+.con-like .poly {
+  stroke: var(--red);
+  fill: var(--red);
+}
+
+.con-like .like:checked ~ .checkmark .filled {
+  display: block
+}
+
+.con-like .like:checked ~ .checkmark .celebrate {
+  display: block
+}
+
+@keyframes kfr-filled {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes kfr-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+    display: none;
+  }
+}
+.tres{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 38%;
+}
+.dois{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 24%;
+}
+.jg{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 24%;
+}
+.mc{
+    width: 50rem;
+    height: 25rem;
+    margin-left: 24%;
+}
